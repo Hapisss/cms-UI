@@ -1,11 +1,34 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
-  theme: {
-    extend: {},
+export const content = [
+  "./src/**/*.{js,jsx,ts,tsx}",
+];
+export const theme = {
+  colors: {
+    'primary': '#071D53',
+    'secondary': '#063777',
+    'accent': '#3F87E5',
+    'gray-50': '#f9fafb',
+    'gray-100': '#f3f4f6',
+    'gray-200': '#e5e7eb',
+    'gray-300': '#d1d5db',
+    'gray-400': '#9ca3af',
+    'gray-500': '#6b7280',
+    'gray-600': '#4b5563',
+    'gray-700': '#374151',
+    'gray-800': '#1f2937',
+    'gray-900': '#111827',
+    'gray-950': '#030712',
+    'white': '#FFFFFF'
   },
-  plugins: [],
-}
+
+  extend: {
+    borderRadius: {
+      '6': '6px'
+    },
+    fontFamily: {
+      'roboto': ['Roboto', 'sans-serif']
+    }
+  },
+};
+export const plugins = [];
 

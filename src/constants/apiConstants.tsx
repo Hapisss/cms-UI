@@ -1,0 +1,1 @@
+export const BASE_ROUTES = '/cms-admin'
